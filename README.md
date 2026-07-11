@@ -12,3 +12,7 @@ instead of proactive ones.
 
 ## Tech Stack (planned)
 Python · PostgreSQL · Power BI · Streamlit · Adzuna API · LLM integration
+
+Description truncation: Adzuna API descriptions are capped at ~500 characters, limiting skill-extraction accuracy for skills mentioned later in a posting. Skill counts should be interpreted as a lower-bound signal, not a complete picture. Future improvement: investigate Adzuna's full-description access or supplement with direct job-page scraping.
+
+
