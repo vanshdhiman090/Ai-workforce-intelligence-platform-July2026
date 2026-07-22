@@ -241,6 +241,9 @@ st.caption(
 )
 
 st.caption(
-    "Skill Gap Analysis is available only for companies with detected skills "
-    "using the current regex-based extraction pipeline."
+    "Skill Gap Analysis currently covers 105 of 558 companies (~19%), "
+    "up from an initial 74 after expanding the skill-detection vocabulary. "
+    "Coverage remains capped primarily by Adzuna's ~500-character description "
+    "truncation, which often cuts off the requirements/skills section before "
+    "detection can run."
 )

@@ -90,6 +90,12 @@ print("sample size — coverage is too thin to treat as representative.")
 # Fixed: word-boundary regex matching instead of substring
 # matching, to avoid false positives (e.g. "Excel" matching
 # inside "excellent").
+#
+# Expanded (Day 11): added common tech/data role skills beyond
+# the original 7, to improve detection coverage. Note: coverage
+# is still fundamentally capped by Adzuna's ~500-character
+# description truncation, which often cuts off the requirements
+# section before any keyword list could match it.
 # ============================================================
 
 SKILLS = [
@@ -99,7 +105,25 @@ SKILLS = [
     "Excel",
     "Tableau",
     "AWS",
-    "Azure"
+    "Azure",
+    "Java",
+    "JavaScript",
+    "React",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "Salesforce",
+    "SAP",
+    "Machine Learning",
+    "Data Analysis",
+    "Scrum",
+    "Agile",
+    "Jira",
+    "Linux",
+    "C#",
+    ".NET",
+    "Node.js",
+    "TypeScript"
 ]
 
 
@@ -142,25 +166,3 @@ print(f"\nFinal dataset contains {len(df_clean)} job records.")
 
 print("\nSample of extracted_skills (first 10 rows):")
 print(df_clean[["title", "extracted_skills"]].head(10).to_string())
-
-import pandas as pd
-
-df_clean = pd.read_csv("data/processed/jobs_clean.csv")
-
-# How many rows have ANY skill detected across the whole dataset?
-non_empty = df_clean["extracted_skills"].apply(lambda x: x != "[]").sum()
-print(f"Rows with at least one skill detected: {non_empty} / {len(df_clean)}")
-
-# Look at a few rows where skills WERE found, if any
-with_skills = df_clean[df_clean["extracted_skills"] != "[]"]
-print(with_skills[["title", "extracted_skills"]].head(10).to_string())
-
-# Sanity check the regex against one known description manually
-import re
-sample_desc = df_clean.iloc[0]["description"]
-print("\nSample description snippet:")
-print(sample_desc[:300])
-print("\nDoes 'excel' appear anywhere (raw substring check)?", "excel" in sample_desc.lower())
-print("Does 'sql' appear anywhere (raw substring check)?", "sql" in sample_desc.lower())
-
-print(df["description"].str.len().describe())
