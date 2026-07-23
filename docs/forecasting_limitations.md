@@ -6,10 +6,8 @@ We queried the date range of the `jobs.created_date` field to evaluate whether
 meaningful time-series forecasting (e.g., skill demand trends, posting volume
 over time) could be built from the current dataset.
 
-```sql
-SELECT MIN(created_date), MAX(created_date), COUNT(DISTINCT created_date)
-FROM jobs;
-```
+    SELECT MIN(created_date), MAX(created_date), COUNT(DISTINCT created_date)
+    FROM jobs;
 
 ## What we found
 
