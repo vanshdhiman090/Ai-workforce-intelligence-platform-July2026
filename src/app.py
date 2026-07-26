@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from sqlalchemy import create_engine, URL, text
 from dotenv import load_dotenv
-
+from ai_insights import generate_executive_insight
 load_dotenv()
 
 DB_USER = os.getenv("DB_USER")
@@ -188,6 +188,7 @@ def get_market_skills():
     return df
 
 
+
 companies_df = get_companies_with_skills()
 
 selected_company = st.selectbox(
@@ -224,6 +225,19 @@ else:
             st.write(missing_skills)
         else:
             st.success("No missing skills detected.")
+
+    with st.expander("Executive Insight"):
+        insight = generate_executive_insight(
+            selected_company,
+            sorted(company_skills),
+            sorted(market_skills),
+            missing_skills
+        )
+        st.write(insight)
+        st.caption(
+            "AI-generated interpretation based on the computed statistics above. "
+            "All numerical values are calculated directly from the database."
+        )
 
 # -------------------------------------------------------
 # Data Quality Notes
