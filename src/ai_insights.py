@@ -5,7 +5,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+def get_secret(key):
+    try:
+        if key in st.secrets:
+            return st.secrets[key]
+    except Exception:
+        pass
+    return os.getenv(key)
+
+
+GEMINI_API_KEY = get_secret("GEMINI_API_KEY")
 
 if not GEMINI_API_KEY:
     raise ValueError("Missing required env var: GEMINI_API_KEY")

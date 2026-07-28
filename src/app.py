@@ -6,11 +6,16 @@ from dotenv import load_dotenv
 from ai_insights import generate_executive_insight
 load_dotenv()
 
-DB_USER = os.getenv("DB_USER")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
-DB_HOST = os.getenv("DB_HOST")
-DB_PORT = os.getenv("DB_PORT")
-DB_NAME = os.getenv("DB_NAME")
+def get_secret(key):
+    if key in st.secrets:
+        return st.secrets[key]
+    return os.getenv(key)
+
+DB_USER = get_secret("DB_USER")
+DB_PASSWORD = get_secret("DB_PASSWORD")
+DB_HOST = get_secret("DB_HOST")
+DB_PORT = get_secret("DB_PORT")
+DB_NAME = get_secret("DB_NAME")
 
 connection_url = URL.create(
     "postgresql",
