@@ -12,6 +12,7 @@ DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT")
 DB_NAME = os.getenv("DB_NAME")
 
+
 for var_name, val in [("DB_USER", DB_USER), ("DB_PASSWORD", DB_PASSWORD),
                        ("DB_HOST", DB_HOST), ("DB_NAME", DB_NAME)]:
     if not val:
@@ -26,6 +27,7 @@ connection_url = URL.create(
     host=DB_HOST,
     port=int(DB_PORT),
     database=DB_NAME,
+    query={"sslmode": "require"},
 )
 engine = create_engine(connection_url)
 

@@ -19,6 +19,7 @@ connection_url = URL.create(
     host=DB_HOST,
     port=int(DB_PORT),
     database=DB_NAME,
+    query={"sslmode": "require"},
 )
 
 engine = create_engine(connection_url)
