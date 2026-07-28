@@ -7,6 +7,10 @@ import streamlit as st
 
 load_dotenv()
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+CLEAN_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "processed", "jobs_clean.csv")
+
 
 def get_secret(key):
     try:
@@ -112,18 +116,14 @@ def load_job_skills(engine, df, job_id_map):
 
 
 def run_load():
-    df = pd.read_csv("../data/processed/jobs_clean.csv")
+    df = pd.read_csv(CLEAN_DATA_PATH)
     df["extracted_skills"] = df["extracted_skills"].apply(ast.literal_eval)
 
     company_map = load_companies(engine, df)
     job_id_map = load_jobs(engine, df, company_map)
     skills_inserted = load_job_skills(engine, df, job_id_map)
 
-    return {
-        "companies": len(company_map),
-        "jobs": len(job_id_map),
-        "skills": skills_inserted,
-    }
+    return {"companies": len(company_map), "jobs": len(job_id_map), "skills": skills_inserted}
 
 
 if __name__ == "__main__":
