@@ -1,0 +1,49 @@
+<svg width="1600" height="320" viewBox="0 0 1600 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1600" height="320" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="4" fill="#2563EB"/>
+
+  <text x="800" y="50" text-anchor="middle" font-size="15" letter-spacing="3" fill="#22D3EE" font-weight="bold">ETL PIPELINE</text>
+
+  <!-- Box 1 Extract -->
+  <rect x="70" y="140" width="260" height="90" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="200" y="170" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Extract</text>
+  <text x="200" y="200" text-anchor="middle" font-size="12" fill="#94A3B8">Adzuna API + fetch_jobs.py</text>
+
+  <line x1="330" y1="185" x2="368" y2="185" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="368,178 381,185 368,192" fill="#22D3EE"/>
+
+  <!-- Box 2 Transform -->
+  <rect x="370" y="140" width="260" height="90" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="500" y="170" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Transform</text>
+  <text x="500" y="200" text-anchor="middle" font-size="12" fill="#94A3B8">clean_data.py</text>
+
+  <line x1="630" y1="185" x2="668" y2="185" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="668,178 681,185 668,192" fill="#22D3EE"/>
+
+  <!-- Box 3 Load -->
+  <rect x="670" y="140" width="260" height="90" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="800" y="170" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Load</text>
+  <text x="800" y="200" text-anchor="middle" font-size="12" fill="#94A3B8">PostgreSQL (Neon Cloud)</text>
+
+  <line x1="930" y1="185" x2="968" y2="185" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="968,178 981,185 968,192" fill="#22D3EE"/>
+
+  <!-- Box 4 Analytics -->
+  <rect x="970" y="140" width="260" height="90" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="1100" y="170" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Analytics</text>
+  <text x="1100" y="200" text-anchor="middle" font-size="12" fill="#94A3B8">SQL Queries + Python pandas</text>
+
+  <line x1="1230" y1="185" x2="1268" y2="185" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="1268,178 1281,185 1268,192" fill="#22D3EE"/>
+
+  <!-- Box 5 Presentation -->
+  <rect x="1270" y="140" width="260" height="90" rx="10" fill="#111827" stroke="#22D3EE" stroke-width="1.25"/>
+  <text x="1400" y="170" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Presentation</text>
+  <text x="1400" y="200" text-anchor="middle" font-size="12" fill="#94A3B8">Streamlit Dashboard + Power BI</text>
+</svg>

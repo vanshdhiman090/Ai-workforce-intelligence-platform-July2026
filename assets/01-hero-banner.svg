@@ -1,0 +1,97 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="85%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="10%" cy="95%" r="55%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#glow1)"/>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#glow2)"/>
+  <rect x="0" y="0" width="1600" height="4" fill="url(#accentBar)"/>
+  <rect x="0" y="896" width="1600" height="4" fill="url(#accentBar)"/>
+
+  <text x="800" y="72" text-anchor="middle" font-size="15" letter-spacing="3" fill="#22D3EE" font-weight="bold">PRODUCTION-GRADE DATA ENGINEERING PLATFORM</text>
+
+  <text x="800" y="168" text-anchor="middle" font-size="58" font-weight="bold" fill="#FFFFFF">AI Workforce Intelligence Platform</text>
+
+  <text x="800" y="216" text-anchor="middle" font-size="26" fill="#38BDF8">Transparent AI-powered workforce intelligence for the German job market</text>
+
+  <text x="800" y="256" text-anchor="middle" font-size="17" fill="#94A3B8">Analyze live job market data to identify in-demand skills, company skill gaps,</text>
+  <text x="800" y="281" text-anchor="middle" font-size="17" fill="#94A3B8">and hiring trends through an end-to-end data engineering pipeline</text>
+
+  <line x1="120" y1="330" x2="1480" y2="330" stroke="#1E293B" stroke-width="1"/>
+
+  <text x="800" y="368" text-anchor="middle" font-size="13" letter-spacing="2" fill="#64748B" font-weight="bold">TECH STACK</text>
+
+  <!-- Badge 1: Python -->
+  <rect x="252" y="395" width="200" height="44" rx="22" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <circle cx="276" cy="417" r="5" fill="#3776AB"/>
+  <text x="292" y="417" dominant-baseline="central" font-size="14" font-weight="bold" fill="#E2E8F0">Python</text>
+
+  <!-- Badge 2: PostgreSQL -->
+  <rect x="476" y="395" width="200" height="44" rx="22" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <circle cx="500" cy="417" r="5" fill="#336791"/>
+  <text x="516" y="417" dominant-baseline="central" font-size="14" font-weight="bold" fill="#E2E8F0">PostgreSQL</text>
+
+  <!-- Badge 3: Streamlit -->
+  <rect x="700" y="395" width="200" height="44" rx="22" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <circle cx="724" cy="417" r="5" fill="#FF4B4B"/>
+  <text x="740" y="417" dominant-baseline="central" font-size="14" font-weight="bold" fill="#E2E8F0">Streamlit</text>
+
+  <!-- Badge 4: Power BI -->
+  <rect x="924" y="395" width="200" height="44" rx="22" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <circle cx="948" cy="417" r="5" fill="#F2C811"/>
+  <text x="964" y="417" dominant-baseline="central" font-size="14" font-weight="bold" fill="#E2E8F0">Power BI</text>
+
+  <!-- Badge 5: Gemini AI -->
+  <rect x="1148" y="395" width="200" height="44" rx="22" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <circle cx="1172" cy="417" r="5" fill="#8B5CF6"/>
+  <text x="1188" y="417" dominant-baseline="central" font-size="14" font-weight="bold" fill="#E2E8F0">Gemini API</text>
+
+  <line x1="120" y1="470" x2="1480" y2="470" stroke="#1E293B" stroke-width="1"/>
+
+  <text x="800" y="508" text-anchor="middle" font-size="13" letter-spacing="2" fill="#64748B" font-weight="bold">END-TO-END DATA PIPELINE</text>
+
+  <!-- Flow boxes -->
+  <rect x="60" y="530" width="260" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="190" y="565" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="bold" fill="#FFFFFF">Adzuna API</text>
+
+  <rect x="365" y="530" width="260" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="495" y="565" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="bold" fill="#FFFFFF">Data Pipeline</text>
+
+  <rect x="670" y="530" width="260" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="800" y="565" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="bold" fill="#FFFFFF">PostgreSQL</text>
+
+  <rect x="975" y="530" width="260" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="1105" y="565" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="bold" fill="#FFFFFF">Streamlit Dashboard</text>
+
+  <rect x="1280" y="530" width="260" height="70" rx="10" fill="#111827" stroke="#22D3EE" stroke-width="1.25"/>
+  <text x="1410" y="565" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="bold" fill="#FFFFFF">AI Executive Insights</text>
+
+  <!-- Arrows -->
+  <line x1="322" y1="565" x2="360" y2="565" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="360,558 373,565 360,572" fill="#22D3EE"/>
+
+  <line x1="627" y1="565" x2="665" y2="565" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="665,558 678,565 665,572" fill="#22D3EE"/>
+
+  <line x1="932" y1="565" x2="970" y2="565" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="970,558 983,565 970,572" fill="#22D3EE"/>
+
+  <line x1="1237" y1="565" x2="1275" y2="565" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="1275,558 1288,565 1275,572" fill="#22D3EE"/>
+</svg>

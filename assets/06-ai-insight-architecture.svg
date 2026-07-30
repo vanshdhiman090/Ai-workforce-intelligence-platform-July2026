@@ -1,0 +1,79 @@
+<svg width="1000" height="1020" viewBox="0 0 1000 1020" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1000" height="1020" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1000" height="4" fill="#2563EB"/>
+
+  <text x="500" y="50" text-anchor="middle" font-size="15" letter-spacing="3" fill="#22D3EE" font-weight="bold">AI EXECUTIVE INSIGHT ARCHITECTURE</text>
+
+  <!-- 1 SQL Queries -->
+  <rect x="340" y="90" width="320" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="500" y="132" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">SQL Queries</text>
+
+  <line x1="500" y1="160" x2="500" y2="200" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="493,200 500,213 507,200" fill="#22D3EE"/>
+
+  <!-- 2 Python Calculations -->
+  <rect x="340" y="220" width="320" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="500" y="262" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Python Calculations</text>
+
+  <line x1="500" y1="290" x2="500" y2="330" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="493,330 500,343 507,330" fill="#22D3EE"/>
+
+  <!-- 3 Verified Metrics (highlighted) -->
+  <rect x="340" y="350" width="320" height="70" rx="10" fill="#111827" stroke="#22D3EE" stroke-width="1.25"/>
+  <text x="500" y="392" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Verified Metrics</text>
+
+  <line x1="500" y1="420" x2="500" y2="460" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="493,460 500,473 507,460" fill="#22D3EE"/>
+
+  <!-- 4 Prompt Construction -->
+  <rect x="340" y="480" width="320" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="500" y="522" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Prompt Construction</text>
+
+  <line x1="500" y1="550" x2="500" y2="590" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="493,590 500,603 507,590" fill="#22D3EE"/>
+
+  <!-- 5 Gemini -->
+  <rect x="340" y="610" width="320" height="70" rx="10" fill="#111827" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="500" y="652" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Gemini</text>
+
+  <line x1="500" y1="680" x2="500" y2="720" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="493,720 500,733 507,720" fill="#22D3EE"/>
+
+  <!-- 6 Executive Narrative -->
+  <rect x="340" y="740" width="320" height="70" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="500" y="782" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Executive Narrative</text>
+
+  <!-- Callout -->
+  <rect x="250" y="828" width="500" height="42" rx="8" fill="#0F1B2E" stroke="#22D3EE" stroke-width="0.75"/>
+  <text x="500" y="849" text-anchor="middle" font-size="12" fill="#67E8F9" font-style="italic">The AI never calculates statistics</text>
+
+  <!-- Core principle mini-strip -->
+  <text x="500" y="912" text-anchor="middle" font-size="12" letter-spacing="2" fill="#64748B" font-weight="bold">CORE PRINCIPLE</text>
+
+  <rect x="55" y="928" width="200" height="50" rx="8" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="155" y="953" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFFFFF">Raw data</text>
+
+  <line x1="255" y1="953" x2="283" y2="953" stroke="#22D3EE" stroke-width="1.5"/>
+  <polygon points="283,947 293,953 283,959" fill="#22D3EE"/>
+
+  <rect x="295" y="928" width="200" height="50" rx="8" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="395" y="953" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFFFFF">Python + SQL processing</text>
+
+  <line x1="495" y1="953" x2="523" y2="953" stroke="#22D3EE" stroke-width="1.5"/>
+  <polygon points="523,947 533,953 523,959" fill="#22D3EE"/>
+
+  <rect x="535" y="928" width="200" height="50" rx="8" fill="#111827" stroke="#22D3EE" stroke-width="1"/>
+  <text x="635" y="953" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFFFFF">Verified metrics</text>
+
+  <line x1="735" y1="953" x2="763" y2="953" stroke="#22D3EE" stroke-width="1.5"/>
+  <polygon points="763,947 773,953 763,959" fill="#22D3EE"/>
+
+  <rect x="775" y="928" width="200" height="50" rx="8" fill="#111827" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="875" y="953" text-anchor="middle" font-size="12" font-weight="bold" fill="#FFFFFF">Gemini explanation layer</text>
+</svg>

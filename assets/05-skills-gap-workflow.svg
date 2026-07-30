@@ -1,0 +1,55 @@
+<svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1000" height="800" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1000" height="4" fill="#2563EB"/>
+
+  <text x="500" y="50" text-anchor="middle" font-size="15" letter-spacing="3" fill="#22D3EE" font-weight="bold">SKILLS GAP ANALYSIS WORKFLOW</text>
+
+  <!-- Market Skills -->
+  <rect x="120" y="100" width="340" height="76" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="290" y="132" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Market Skills</text>
+  <text x="290" y="156" text-anchor="middle" font-size="12" fill="#94A3B8">Aggregated from all postings</text>
+
+  <!-- Company Skills -->
+  <rect x="540" y="100" width="340" height="76" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="710" y="132" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Company Skills</text>
+  <text x="710" y="156" text-anchor="middle" font-size="12" fill="#94A3B8">Skills present at a given company</text>
+
+  <!-- convergence -->
+  <path d="M290 176 L290 226 L500 226 L500 250" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+  <path d="M710 176 L710 226 L500 226 L500 250" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+  <polygon points="493,250 500,263 507,250" fill="#22D3EE"/>
+
+  <!-- Set Difference -->
+  <rect x="330" y="264" width="340" height="76" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="500" y="296" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Set Difference</text>
+  <text x="500" y="320" text-anchor="middle" font-size="12" fill="#94A3B8">Market Skills minus Company Skills</text>
+
+  <line x1="500" y1="340" x2="500" y2="384" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="493,384 500,397 507,384" fill="#22D3EE"/>
+
+  <!-- Missing Skills -->
+  <rect x="330" y="404" width="340" height="76" rx="10" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="500" y="436" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Missing Skills</text>
+  <text x="500" y="460" text-anchor="middle" font-size="12" fill="#94A3B8">Verified skill gap, computed in Python</text>
+
+  <line x1="500" y1="480" x2="500" y2="524" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="493,524 500,537 507,524" fill="#22D3EE"/>
+
+  <!-- Gemini Executive Insight -->
+  <rect x="330" y="544" width="340" height="76" rx="10" fill="#111827" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="500" y="576" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">Gemini Executive Insight</text>
+  <text x="500" y="600" text-anchor="middle" font-size="12" fill="#94A3B8">Explains the gap in narrative form</text>
+
+  <!-- Callout -->
+  <rect x="250" y="650" width="500" height="42" rx="8" fill="#0F1B2E" stroke="#22D3EE" stroke-width="0.75"/>
+  <text x="500" y="671" text-anchor="middle" font-size="12" fill="#67E8F9" font-style="italic">Gemini receives precomputed results only</text>
+
+  <rect x="200" y="712" width="600" height="42" rx="8" fill="#0F1B2E" stroke="#22D3EE" stroke-width="0.75"/>
+  <text x="500" y="733" text-anchor="middle" font-size="12" fill="#67E8F9" font-style="italic">AI explains verified metrics. AI does not calculate statistics.</text>
+</svg>

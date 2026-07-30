@@ -1,0 +1,51 @@
+<svg width="1600" height="740" viewBox="0 0 1600 740" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1600" height="740" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="4" fill="#2563EB"/>
+
+  <text x="800" y="60" text-anchor="middle" font-size="15" letter-spacing="3" fill="#22D3EE" font-weight="bold">DATA QUALITY FRAMEWORK</text>
+
+  <!-- Row 1 -->
+  <rect x="220" y="140" width="360" height="220" rx="12" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="252" y="184" font-size="16" font-weight="bold" fill="#FFFFFF">Salary Coverage</text>
+  <text x="252" y="214" font-size="13" fill="#94A3B8">Not all postings include</text>
+  <text x="252" y="234" font-size="13" fill="#94A3B8">salary data. Coverage is</text>
+  <text x="252" y="254" font-size="13" fill="#94A3B8">measured and reported,</text>
+  <text x="252" y="274" font-size="13" fill="#94A3B8">not estimated.</text>
+
+  <rect x="620" y="140" width="360" height="220" rx="12" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="652" y="184" font-size="16" font-weight="bold" fill="#FFFFFF">Category Coverage</text>
+  <text x="652" y="214" font-size="13" fill="#94A3B8">Job categories come directly</text>
+  <text x="652" y="234" font-size="13" fill="#94A3B8">from Adzuna's taxonomy,</text>
+  <text x="652" y="254" font-size="13" fill="#94A3B8">without manual</text>
+  <text x="652" y="274" font-size="13" fill="#94A3B8">reclassification.</text>
+
+  <rect x="1020" y="140" width="360" height="220" rx="12" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="1052" y="184" font-size="16" font-weight="bold" fill="#FFFFFF">Skill Detection Coverage</text>
+  <text x="1052" y="214" font-size="13" fill="#94A3B8">Skills are extracted via</text>
+  <text x="1052" y="234" font-size="13" fill="#94A3B8">rule-based matching.</text>
+  <text x="1052" y="254" font-size="13" fill="#94A3B8">Unmatched postings are</text>
+  <text x="1052" y="274" font-size="13" fill="#94A3B8">flagged, not guessed.</text>
+
+  <!-- Row 2 -->
+  <rect x="420" y="400" width="360" height="220" rx="12" fill="#111827" stroke="#1E293B" stroke-width="0.75"/>
+  <text x="452" y="444" font-size="16" font-weight="bold" fill="#FFFFFF">Forecasting Limitation</text>
+  <text x="452" y="474" font-size="13" fill="#94A3B8">The platform analyzes</text>
+  <text x="452" y="494" font-size="13" fill="#94A3B8">historical and current data</text>
+  <text x="452" y="514" font-size="13" fill="#94A3B8">only. It does not predict</text>
+  <text x="452" y="534" font-size="13" fill="#94A3B8">future trends.</text>
+
+  <rect x="820" y="400" width="360" height="220" rx="12" fill="#111827" stroke="#22D3EE" stroke-width="1.25"/>
+  <text x="852" y="444" font-size="16" font-weight="bold" fill="#FFFFFF">Transparent Reporting</text>
+  <text x="852" y="474" font-size="13" fill="#94A3B8">Every dashboard surfaces its</text>
+  <text x="852" y="494" font-size="13" fill="#94A3B8">underlying data completeness</text>
+  <text x="852" y="514" font-size="13" fill="#94A3B8">alongside the metric</text>
+  <text x="852" y="534" font-size="13" fill="#94A3B8">itself.</text>
+
+  <text x="800" y="700" text-anchor="middle" font-size="12" fill="#67E8F9" font-style="italic">AI explains verified metrics. AI does not calculate statistics.</text>
+</svg>
