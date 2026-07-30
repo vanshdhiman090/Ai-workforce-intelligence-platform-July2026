@@ -16,6 +16,7 @@ An AI-powered workforce intelligence platform that transforms live German job ma
 **🔗 [Live app](https://ai-workforce-intelligence-platform-july2026-kvvfa6vrauzrcnulce.streamlit.app/)** · **[GitHub](https://github.com/vanshdhiman090/Ai-workforce-intelligence-platform-July2026)**
 
 </div>
+![Demo](assets/demo.gif)
 
 ---
 
